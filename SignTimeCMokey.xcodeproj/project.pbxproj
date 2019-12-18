@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C369C40423A0DEA9007CC05A /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C369C40323A0DEA9007CC05A /* MDConfig.plist */; };
+		C369C40E23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = C369C40D23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C369C41323A0DEA9007CC05A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C369C41223A0DEA9007CC05A /* JavaScriptCore.framework */; };
+		C369C41523A0DEA9007CC05A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C369C41423A0DEA9007CC05A /* Foundation.framework */; };
+		C369C41723A0DEA9007CC05A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C369C41623A0DEA9007CC05A /* UIKit.framework */; };
+		C369C41C23A0DEA9007CC05A /* SignTimeCMokeyDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = C369C41B23A0DEA9007CC05A /* SignTimeCMokeyDylib.mm */; };
+		C369C41F23A0DEA9007CC05A /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C41E23A0DEA9007CC05A /* MDConfigManager.h */; };
+		C369C42123A0DEA9007CC05A /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C42023A0DEA9007CC05A /* MDConfigManager.m */; };
+		C369C42323A0DEA9007CC05A /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C42223A0DEA9007CC05A /* MDCycriptManager.h */; };
+		C369C42523A0DEA9007CC05A /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C42423A0DEA9007CC05A /* MDCycriptManager.m */; };
+		C369C42723A0DEA9007CC05A /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C42623A0DEA9007CC05A /* MDMethodTrace.h */; };
+		C369C42923A0DEA9007CC05A /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C42823A0DEA9007CC05A /* MDMethodTrace.m */; };
+		C369C42C23A0DEA9007CC05A /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C42B23A0DEA9007CC05A /* a1a2-selectortramps-arm.s */; };
+		C369C42E23A0DEA9007CC05A /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C42D23A0DEA9007CC05A /* a1a2-selectortramps-arm64.s */; };
+		C369C43023A0DEA9007CC05A /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C42F23A0DEA9007CC05A /* a1a2-selectortramps-i386.s */; };
+		C369C43223A0DEA9007CC05A /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C43123A0DEA9007CC05A /* a1a2-selectortramps-x86_64.s */; };
+		C369C43423A0DEA9007CC05A /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C43323A0DEA9007CC05A /* a2a3-selectortramps-arm.s */; };
+		C369C43623A0DEA9007CC05A /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C43523A0DEA9007CC05A /* a2a3-selectortramps-i386.s */; };
+		C369C43823A0DEA9007CC05A /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = C369C43723A0DEA9007CC05A /* a2a3-selectortramps-x86_64.s */; };
+		C369C43A23A0DEA9007CC05A /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C43923A0DEA9007CC05A /* OCMethodTrace.h */; };
+		C369C43C23A0DEA9007CC05A /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C43B23A0DEA9007CC05A /* OCMethodTrace.m */; };
+		C369C43E23A0DEA9007CC05A /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C43D23A0DEA9007CC05A /* OCSelectorTrampolines.h */; };
+		C369C44023A0DEA9007CC05A /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = C369C43F23A0DEA9007CC05A /* OCSelectorTrampolines.mm */; };
+		C369C44423A0DEA9007CC05A /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C44323A0DEA9007CC05A /* LLDBTools.h */; };
+		C369C44623A0DEA9007CC05A /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = C369C44523A0DEA9007CC05A /* LLDBTools.mm */; };
+		C369C44B23A0DEA9007CC05A /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C44A23A0DEA9007CC05A /* AntiAntiDebug.m */; };
+		C369C44E23A0DEA9007CC05A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C369C44D23A0DEA9007CC05A /* fishhook.c */; };
+		C369C45023A0DEA9007CC05A /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C44F23A0DEA9007CC05A /* fishhook.h */; };
+		C369C45223A0DEA9007CC05A /* SignTimeCMokeyDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = C369C45123A0DEA9007CC05A /* SignTimeCMokeyDylib.h */; };
+		C369C45423A0DEA9007CC05A /* SignTimeCMokeyDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = C369C45323A0DEA9007CC05A /* SignTimeCMokeyDylib.m */; };
+		C369C46023A0DFD9007CC05A /* SignTimeCMokeyDylib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C369C45F23A0DFD9007CC05A /* SignTimeCMokeyDylib-Prefix.pch */; };
+		C389416723A50EA000B13000 /* GSKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C389416523A50EA000B13000 /* GSKeyChain.h */; };
+		C389416823A50EA000B13000 /* GSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = C389416623A50EA000B13000 /* GSKeyChain.m */; };
+		C389416B23A50F1B00B13000 /* GSKeyChainDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */; };
+		C389416C23A50F1B00B13000 /* GSKeyChainDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */; };
+		C3B02D5023A4CDE1003C9611 /* YesApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B02D4E23A4CDE1003C9611 /* YesApiManager.h */; };
+		C3B02D5123A4CDE1003C9611 /* YesApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B02D4F23A4CDE1003C9611 /* YesApiManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C369C40F23A0DEA9007CC05A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C369C3F123A0DEA9007CC05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C369C40C23A0DEA9007CC05A;
+			remoteInfo = SignTimeCMokeyDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C369C3F923A0DEA9007CC05A /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C369C40E23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C369C3FC23A0DEA9007CC05A /* SignTimeCMokey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignTimeCMokey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C369C3FF23A0DEA9007CC05A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C369C40123A0DEA9007CC05A /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		C369C40323A0DEA9007CC05A /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		C369C40623A0DEA9007CC05A /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		C369C40723A0DEA9007CC05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C369C40D23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSignTimeCMokeyDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C369C41223A0DEA9007CC05A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C369C41423A0DEA9007CC05A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C369C41623A0DEA9007CC05A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C369C41A23A0DEA9007CC05A /* SignTimeCMokeyDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = SignTimeCMokeyDylib.xm; sourceTree = "<group>"; };
+		C369C41B23A0DEA9007CC05A /* SignTimeCMokeyDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SignTimeCMokeyDylib.mm; sourceTree = "<group>"; };
+		C369C41E23A0DEA9007CC05A /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		C369C42023A0DEA9007CC05A /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		C369C42223A0DEA9007CC05A /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		C369C42423A0DEA9007CC05A /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		C369C42623A0DEA9007CC05A /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		C369C42823A0DEA9007CC05A /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		C369C42B23A0DEA9007CC05A /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		C369C42D23A0DEA9007CC05A /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		C369C42F23A0DEA9007CC05A /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		C369C43123A0DEA9007CC05A /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		C369C43323A0DEA9007CC05A /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		C369C43523A0DEA9007CC05A /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		C369C43723A0DEA9007CC05A /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		C369C43923A0DEA9007CC05A /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		C369C43B23A0DEA9007CC05A /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		C369C43D23A0DEA9007CC05A /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		C369C43F23A0DEA9007CC05A /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		C369C44123A0DEA9007CC05A /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		C369C44323A0DEA9007CC05A /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		C369C44523A0DEA9007CC05A /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		C369C44A23A0DEA9007CC05A /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		C369C44D23A0DEA9007CC05A /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		C369C44F23A0DEA9007CC05A /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		C369C45123A0DEA9007CC05A /* SignTimeCMokeyDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignTimeCMokeyDylib.h; sourceTree = "<group>"; };
+		C369C45323A0DEA9007CC05A /* SignTimeCMokeyDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignTimeCMokeyDylib.m; sourceTree = "<group>"; };
+		C369C45F23A0DFD9007CC05A /* SignTimeCMokeyDylib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SignTimeCMokeyDylib-Prefix.pch"; path = "SignTimeCMokeyDylib/SignTimeCMokeyDylib-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C389416523A50EA000B13000 /* GSKeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSKeyChain.h; sourceTree = "<group>"; };
+		C389416623A50EA000B13000 /* GSKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSKeyChain.m; sourceTree = "<group>"; };
+		C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSKeyChainDataManager.h; sourceTree = "<group>"; };
+		C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSKeyChainDataManager.m; sourceTree = "<group>"; };
+		C3B02D4E23A4CDE1003C9611 /* YesApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YesApiManager.h; sourceTree = "<group>"; };
+		C3B02D4F23A4CDE1003C9611 /* YesApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesApiManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C369C3F623A0DEA9007CC05A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C369C40A23A0DEA9007CC05A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C369C41323A0DEA9007CC05A /* JavaScriptCore.framework in Frameworks */,
+				C369C41723A0DEA9007CC05A /* UIKit.framework in Frameworks */,
+				C369C41523A0DEA9007CC05A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C369C3F023A0DEA9007CC05A = {
+			isa = PBXGroup;
+			children = (
+				C369C3FE23A0DEA9007CC05A /* SignTimeCMokey */,
+				C369C41823A0DEA9007CC05A /* SignTimeCMokeyDylib */,
+				C369C41123A0DEA9007CC05A /* Frameworks */,
+				C369C3FD23A0DEA9007CC05A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C369C3FD23A0DEA9007CC05A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C369C3FC23A0DEA9007CC05A /* SignTimeCMokey.app */,
+				C369C40D23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C369C3FE23A0DEA9007CC05A /* SignTimeCMokey */ = {
+			isa = PBXGroup;
+			children = (
+				C369C3FF23A0DEA9007CC05A /* icon.png */,
+				C369C40723A0DEA9007CC05A /* Info.plist */,
+				C369C40023A0DEA9007CC05A /* Scripts */,
+				C369C40223A0DEA9007CC05A /* Config */,
+				C369C40523A0DEA9007CC05A /* TargetApp */,
+			);
+			path = SignTimeCMokey;
+			sourceTree = "<group>";
+		};
+		C369C40023A0DEA9007CC05A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C369C40123A0DEA9007CC05A /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		C369C40223A0DEA9007CC05A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C369C40323A0DEA9007CC05A /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C369C40523A0DEA9007CC05A /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				C369C40623A0DEA9007CC05A /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		C369C41123A0DEA9007CC05A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C369C41223A0DEA9007CC05A /* JavaScriptCore.framework */,
+				C369C41423A0DEA9007CC05A /* Foundation.framework */,
+				C369C41623A0DEA9007CC05A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C369C41823A0DEA9007CC05A /* SignTimeCMokeyDylib */ = {
+			isa = PBXGroup;
+			children = (
+				C369C45123A0DEA9007CC05A /* SignTimeCMokeyDylib.h */,
+				C369C45323A0DEA9007CC05A /* SignTimeCMokeyDylib.m */,
+				C3B02D4E23A4CDE1003C9611 /* YesApiManager.h */,
+				C3B02D4F23A4CDE1003C9611 /* YesApiManager.m */,
+				C389416523A50EA000B13000 /* GSKeyChain.h */,
+				C389416623A50EA000B13000 /* GSKeyChain.m */,
+				C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */,
+				C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */,
+				C369C41923A0DEA9007CC05A /* Logos */,
+				C369C41D23A0DEA9007CC05A /* Config */,
+				C369C42A23A0DEA9007CC05A /* Trace */,
+				C369C44223A0DEA9007CC05A /* Tools */,
+				C369C44923A0DEA9007CC05A /* AntiAntiDebug */,
+				C369C44C23A0DEA9007CC05A /* fishhook */,
+				C369C44723A0DEA9007CC05A /* Supporting Files */,
+			);
+			path = SignTimeCMokeyDylib;
+			sourceTree = "<group>";
+		};
+		C369C41923A0DEA9007CC05A /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				C369C41A23A0DEA9007CC05A /* SignTimeCMokeyDylib.xm */,
+				C369C41B23A0DEA9007CC05A /* SignTimeCMokeyDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		C369C41D23A0DEA9007CC05A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C369C41E23A0DEA9007CC05A /* MDConfigManager.h */,
+				C369C42023A0DEA9007CC05A /* MDConfigManager.m */,
+				C369C42223A0DEA9007CC05A /* MDCycriptManager.h */,
+				C369C42423A0DEA9007CC05A /* MDCycriptManager.m */,
+				C369C42623A0DEA9007CC05A /* MDMethodTrace.h */,
+				C369C42823A0DEA9007CC05A /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C369C42A23A0DEA9007CC05A /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				C369C42B23A0DEA9007CC05A /* a1a2-selectortramps-arm.s */,
+				C369C42D23A0DEA9007CC05A /* a1a2-selectortramps-arm64.s */,
+				C369C42F23A0DEA9007CC05A /* a1a2-selectortramps-i386.s */,
+				C369C43123A0DEA9007CC05A /* a1a2-selectortramps-x86_64.s */,
+				C369C43323A0DEA9007CC05A /* a2a3-selectortramps-arm.s */,
+				C369C43523A0DEA9007CC05A /* a2a3-selectortramps-i386.s */,
+				C369C43723A0DEA9007CC05A /* a2a3-selectortramps-x86_64.s */,
+				C369C43923A0DEA9007CC05A /* OCMethodTrace.h */,
+				C369C43B23A0DEA9007CC05A /* OCMethodTrace.m */,
+				C369C43D23A0DEA9007CC05A /* OCSelectorTrampolines.h */,
+				C369C43F23A0DEA9007CC05A /* OCSelectorTrampolines.mm */,
+				C369C44123A0DEA9007CC05A /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		C369C44223A0DEA9007CC05A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C369C44323A0DEA9007CC05A /* LLDBTools.h */,
+				C369C44523A0DEA9007CC05A /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C369C44723A0DEA9007CC05A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C369C45F23A0DFD9007CC05A /* SignTimeCMokeyDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C369C44923A0DEA9007CC05A /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				C369C44A23A0DEA9007CC05A /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		C369C44C23A0DEA9007CC05A /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				C369C44D23A0DEA9007CC05A /* fishhook.c */,
+				C369C44F23A0DEA9007CC05A /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C369C40B23A0DEA9007CC05A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C389416B23A50F1B00B13000 /* GSKeyChainDataManager.h in Headers */,
+				C369C42323A0DEA9007CC05A /* MDCycriptManager.h in Headers */,
+				C369C42723A0DEA9007CC05A /* MDMethodTrace.h in Headers */,
+				C369C45023A0DEA9007CC05A /* fishhook.h in Headers */,
+				C369C44423A0DEA9007CC05A /* LLDBTools.h in Headers */,
+				C369C41F23A0DEA9007CC05A /* MDConfigManager.h in Headers */,
+				C3B02D5023A4CDE1003C9611 /* YesApiManager.h in Headers */,
+				C369C43E23A0DEA9007CC05A /* OCSelectorTrampolines.h in Headers */,
+				C369C43A23A0DEA9007CC05A /* OCMethodTrace.h in Headers */,
+				C369C46023A0DFD9007CC05A /* SignTimeCMokeyDylib-Prefix.pch in Headers */,
+				C389416723A50EA000B13000 /* GSKeyChain.h in Headers */,
+				C369C45223A0DEA9007CC05A /* SignTimeCMokeyDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C369C3FB23A0DEA9007CC05A /* SignTimeCMokey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C369C45A23A0DEA9007CC05A /* Build configuration list for PBXNativeTarget "SignTimeCMokey" */;
+			buildPhases = (
+				C369C3F523A0DEA9007CC05A /* Sources */,
+				C369C3F623A0DEA9007CC05A /* Frameworks */,
+				C369C3F723A0DEA9007CC05A /* ShellScript */,
+				C369C3F823A0DEA9007CC05A /* Resources */,
+				C369C3F923A0DEA9007CC05A /* Copy Files */,
+				C369C3FA23A0DEA9007CC05A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C369C41023A0DEA9007CC05A /* PBXTargetDependency */,
+			);
+			name = SignTimeCMokey;
+			productName = SignTimeCMokey;
+			productReference = C369C3FC23A0DEA9007CC05A /* SignTimeCMokey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C369C40C23A0DEA9007CC05A /* SignTimeCMokeyDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C369C45723A0DEA9007CC05A /* Build configuration list for PBXNativeTarget "SignTimeCMokeyDylib" */;
+			buildPhases = (
+				C369C40823A0DEA9007CC05A /* ShellScript */,
+				C369C40923A0DEA9007CC05A /* Sources */,
+				C369C40A23A0DEA9007CC05A /* Frameworks */,
+				C369C40B23A0DEA9007CC05A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignTimeCMokeyDylib;
+			productName = SignTimeCMokeyDylib;
+			productReference = C369C40D23A0DEA9007CC05A /* libSignTimeCMokeyDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C369C3F123A0DEA9007CC05A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "郑桂华";
+				TargetAttributes = {
+					C369C3FB23A0DEA9007CC05A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C369C40C23A0DEA9007CC05A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C369C3F423A0DEA9007CC05A /* Build configuration list for PBXProject "SignTimeCMokey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C369C3F023A0DEA9007CC05A;
+			productRefGroup = C369C3FD23A0DEA9007CC05A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C369C3FB23A0DEA9007CC05A /* SignTimeCMokey */,
+				C369C40C23A0DEA9007CC05A /* SignTimeCMokeyDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C369C3F823A0DEA9007CC05A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C369C40423A0DEA9007CC05A /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C369C3F723A0DEA9007CC05A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		C369C3FA23A0DEA9007CC05A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign &&\n/Users/zhengguihua/Desktop/SignTimeCMokey/runend.sh\n";
+		};
+		C369C40823A0DEA9007CC05A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C369C3F523A0DEA9007CC05A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C369C40923A0DEA9007CC05A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C369C42523A0DEA9007CC05A /* MDCycriptManager.m in Sources */,
+				C369C42E23A0DEA9007CC05A /* a1a2-selectortramps-arm64.s in Sources */,
+				C369C42C23A0DEA9007CC05A /* a1a2-selectortramps-arm.s in Sources */,
+				C369C43223A0DEA9007CC05A /* a1a2-selectortramps-x86_64.s in Sources */,
+				C369C45423A0DEA9007CC05A /* SignTimeCMokeyDylib.m in Sources */,
+				C369C43C23A0DEA9007CC05A /* OCMethodTrace.m in Sources */,
+				C3B02D5123A4CDE1003C9611 /* YesApiManager.m in Sources */,
+				C369C42123A0DEA9007CC05A /* MDConfigManager.m in Sources */,
+				C369C44E23A0DEA9007CC05A /* fishhook.c in Sources */,
+				C369C44B23A0DEA9007CC05A /* AntiAntiDebug.m in Sources */,
+				C369C44023A0DEA9007CC05A /* OCSelectorTrampolines.mm in Sources */,
+				C369C43023A0DEA9007CC05A /* a1a2-selectortramps-i386.s in Sources */,
+				C369C43623A0DEA9007CC05A /* a2a3-selectortramps-i386.s in Sources */,
+				C389416C23A50F1B00B13000 /* GSKeyChainDataManager.m in Sources */,
+				C369C43423A0DEA9007CC05A /* a2a3-selectortramps-arm.s in Sources */,
+				C369C41C23A0DEA9007CC05A /* SignTimeCMokeyDylib.mm in Sources */,
+				C369C44623A0DEA9007CC05A /* LLDBTools.mm in Sources */,
+				C389416823A50EA000B13000 /* GSKeyChain.m in Sources */,
+				C369C43823A0DEA9007CC05A /* a2a3-selectortramps-x86_64.s in Sources */,
+				C369C42923A0DEA9007CC05A /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C369C41023A0DEA9007CC05A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C369C40C23A0DEA9007CC05A /* SignTimeCMokeyDylib */;
+			targetProxy = C369C40F23A0DEA9007CC05A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C369C45523A0DEA9007CC05A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C369C45623A0DEA9007CC05A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C369C45823A0DEA9007CC05A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T82JQ7P486;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SignTimeCMokeyDylib/SignTimeCMokeyDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libSignTimeCMokeyDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"SignTimeCMokeyDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C369C45923A0DEA9007CC05A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = T82JQ7P486;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SignTimeCMokeyDylib/SignTimeCMokeyDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libSignTimeCMokeyDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"SignTimeCMokeyDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C369C45B23A0DEA9007CC05A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 107;
+				DEVELOPMENT_TEAM = T82JQ7P486;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SignTimeCMokey/Info.plist;
+				MARKETING_VERSION = 1.0.7;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgh.Animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C369C45C23A0DEA9007CC05A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 107;
+				DEVELOPMENT_TEAM = T82JQ7P486;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SignTimeCMokey/Info.plist;
+				MARKETING_VERSION = 1.0.7;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgh.Animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C369C3F423A0DEA9007CC05A /* Build configuration list for PBXProject "SignTimeCMokey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C369C45523A0DEA9007CC05A /* Debug */,
+				C369C45623A0DEA9007CC05A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C369C45723A0DEA9007CC05A /* Build configuration list for PBXNativeTarget "SignTimeCMokeyDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C369C45823A0DEA9007CC05A /* Debug */,
+				C369C45923A0DEA9007CC05A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C369C45A23A0DEA9007CC05A /* Build configuration list for PBXNativeTarget "SignTimeCMokey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C369C45B23A0DEA9007CC05A /* Debug */,
+				C369C45C23A0DEA9007CC05A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C369C3F123A0DEA9007CC05A /* Project object */;
+}
