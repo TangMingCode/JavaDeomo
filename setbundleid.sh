@@ -33,7 +33,8 @@ appDir="$temIpaDirPath/Payload/`ls "$temIpaDirPath/"Payload`"
 lcmInfoPlist="${appDir}/Info.plist"
 echo "info.plist文件路径 lcmInfoPlist : $lcmInfoPlist"
 
-targetInfoPlist="/Users/zhengguihua/Library/Developer/Xcode/DerivedData/SignTimeCMokey-*/Build/Products/Debug-iphoneos/SignTimeCMokey.app/Info.plist"
+userPath=${HOME}
+targetInfoPlist="$userPath/Library/Developer/Xcode/DerivedData/SignTimeCMokey-*/Build/Products/Debug-iphoneos/SignTimeCMokey.app/Info.plist"
 
 # 获取app的名称、版本号、build号
 appName=`/usr/libexec/PlistBuddy -c "Print :CFBundleName" $lcmInfoPlist`

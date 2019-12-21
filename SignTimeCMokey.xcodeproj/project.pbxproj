@@ -42,6 +42,8 @@
 		C389416823A50EA000B13000 /* GSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = C389416623A50EA000B13000 /* GSKeyChain.m */; };
 		C389416B23A50F1B00B13000 /* GSKeyChainDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */; };
 		C389416C23A50F1B00B13000 /* GSKeyChainDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */; };
+		C39332F123ADE28D00A22C14 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C39332EF23ADE28D00A22C14 /* AFNetworkReachabilityManager.h */; };
+		C39332F223ADE28D00A22C14 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C39332F023ADE28D00A22C14 /* AFNetworkReachabilityManager.m */; };
 		C3B02D5023A4CDE1003C9611 /* YesApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B02D4E23A4CDE1003C9611 /* YesApiManager.h */; };
 		C3B02D5123A4CDE1003C9611 /* YesApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B02D4F23A4CDE1003C9611 /* YesApiManager.m */; };
 /* End PBXBuildFile section */
@@ -113,6 +115,8 @@
 		C389416623A50EA000B13000 /* GSKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSKeyChain.m; sourceTree = "<group>"; };
 		C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSKeyChainDataManager.h; sourceTree = "<group>"; };
 		C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSKeyChainDataManager.m; sourceTree = "<group>"; };
+		C39332EF23ADE28D00A22C14 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C39332F023ADE28D00A22C14 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		C3B02D4E23A4CDE1003C9611 /* YesApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YesApiManager.h; sourceTree = "<group>"; };
 		C3B02D4F23A4CDE1003C9611 /* YesApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesApiManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +218,8 @@
 				C389416623A50EA000B13000 /* GSKeyChain.m */,
 				C389416923A50F1B00B13000 /* GSKeyChainDataManager.h */,
 				C389416A23A50F1B00B13000 /* GSKeyChainDataManager.m */,
+				C39332EF23ADE28D00A22C14 /* AFNetworkReachabilityManager.h */,
+				C39332F023ADE28D00A22C14 /* AFNetworkReachabilityManager.m */,
 				C369C41923A0DEA9007CC05A /* Logos */,
 				C369C41D23A0DEA9007CC05A /* Config */,
 				C369C42A23A0DEA9007CC05A /* Trace */,
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C389416B23A50F1B00B13000 /* GSKeyChainDataManager.h in Headers */,
+				C39332F123ADE28D00A22C14 /* AFNetworkReachabilityManager.h in Headers */,
 				C369C42323A0DEA9007CC05A /* MDCycriptManager.h in Headers */,
 				C369C42723A0DEA9007CC05A /* MDMethodTrace.h in Headers */,
 				C369C45023A0DEA9007CC05A /* fishhook.h in Headers */,
@@ -487,6 +494,7 @@
 				C369C42123A0DEA9007CC05A /* MDConfigManager.m in Sources */,
 				C369C44E23A0DEA9007CC05A /* fishhook.c in Sources */,
 				C369C44B23A0DEA9007CC05A /* AntiAntiDebug.m in Sources */,
+				C39332F223ADE28D00A22C14 /* AFNetworkReachabilityManager.m in Sources */,
 				C369C44023A0DEA9007CC05A /* OCSelectorTrampolines.mm in Sources */,
 				C369C43023A0DEA9007CC05A /* a1a2-selectortramps-i386.s in Sources */,
 				C369C43623A0DEA9007CC05A /* a2a3-selectortramps-i386.s in Sources */,

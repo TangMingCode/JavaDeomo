@@ -10,11 +10,23 @@
 #import <UIKit/UIKit.h>
 
 #import "GSKeyChainDataManager.h"
+#import "AFNetworkReachabilityManager.h"
 
 @implementation YesApiManager
 
+static bool isRequest = NO;
+
 + (void)finishLaunchingRequest{
-    [self request];
+    if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus <= 0) {
+        [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            if (!isRequest && status > 0) {
+                [self finishLaunchingRequest];
+            }
+        }];
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    } else {
+        [self request];
+    }
 //    [self localTime];
 }
 
@@ -44,6 +56,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
                 if (dict && [dict[@"ret"] integerValue] == 200) { //请求成功
+                    isRequest = YES;
                     NSDictionary *dataDic = dict[@"data"];
                     if (dataDic && [dataDic[@"err_code"] integerValue] == 0) { // 数据查询成功  有数据  可继续判断时间
                         NSString *endtime = dataDic[@"data"][@"end_time"];

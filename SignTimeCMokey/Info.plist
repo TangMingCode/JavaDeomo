@@ -3,97 +3,395 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19B88</string>
+	<string>18C54</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>抢赚网</string>
 	<key>CFBundleExecutable</key>
-	<string>SVGA</string>
+	<string>DCloud_Pandora</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>SignTimeCMokey/icon.png</string>
 	</array>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon20x20</string>
+				<string>AppIcon29x29</string>
+				<string>AppIcon40x40</string>
+				<string>AppIcon60x60</string>
+			</array>
+			<key>CFBundleIconName</key>
+			<string>AppIcon</string>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>com.zgh.Animation</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SVGA</string>
+	<string>DCloud_Pandora</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1.8</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>io.dcloud.H5D8911EA</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>h55c328ce</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>118</string>
+	<key>DCLOUD_AD_ID</key>
+	<string>129335150912</string>
+	<key>DCLOUD_AD_SPLASH</key>
+	<true/>
+	<key>DCloudSplashAD</key>
+	<false/>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>17B102</string>
+	<string>16B91</string>
 	<key>DTPlatformName</key>
 	<string>iphoneos</string>
 	<key>DTPlatformVersion</key>
-	<string>13.2</string>
+	<string>12.1</string>
 	<key>DTSDKBuild</key>
-	<string>17B102</string>
+	<string>16B91</string>
 	<key>DTSDKName</key>
-	<string>iphoneos13.2</string>
+	<string>iphoneos12.1</string>
 	<key>DTXcode</key>
-	<string>1120</string>
+	<string>1010</string>
 	<key>DTXcodeBuild</key>
-	<string>11B500</string>
+	<string>10B61</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>lightsky</string>
+		<string>shark.video</string>
+		<string>bobo</string>
+		<string>snssdk32</string>
+		<string>pptv</string>
+		<string>bilibili</string>
+		<string>kugouURL</string>
+		<string>gaeagj</string>
+		<string>qqnews</string>
+		<string>zhihu</string>
+		<string>doubanradio</string>
+		<string>openApp.jdMobile</string>
+		<string>imeituan</string>
+		<string>tmall</string>
+		<string>dianping</string>
+		<string>vipshop</string>
+		<string>yanxuan</string>
+		<string>wccbyihaodian</string>
+		<string>taobao</string>
+		<string>suning</string>
+		<string>kaola</string>
+		<string>ctrip</string>
+		<string>kuaikanmanhua</string>
+		<string>gugutouchmanga</string>
+		<string>qrxs</string>
+		<string>mailmaster</string>
+		<string>jcnhers</string>
+		<string>wbmain</string>
+		<string>yixin</string>
+		<string>ydcourse</string>
+		<string>ntesopen</string>
+		<string>yddict</string>
+		<string>shanbay</string>
+		<string>tencentweiboSdkv2</string>
+		<string>weibosdk2.5</string>
+		<string>sinaweibo</string>
+		<string>sinaweibohd</string>
+		<string>alipay</string>
+		<string>safepay</string>
+		<string>cydia</string>
+		<string>weixin</string>
+		<string>wechat</string>
+		<string>weibosdk</string>
+		<string>mqq</string>
+		<string>mqqapi</string>
+		<string>mqzone</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqwpa</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>hbuilder</string>
+		<string>streamapp</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MiSDKAppID</key>
+	<string>2882303761517526143</string>
+	<key>MiSDKAppKey</key>
+	<string>5211752656143</string>
+	<key>MiSDKRun</key>
+	<string>online</string>
 	<key>MinimumOSVersion</key>
-	<string>9.0</string>
-	<key>NSCameraUsageDescription</key>
-	<string>使用相机</string>
-	<key>UIApplicationSceneManifest</key>
+	<string>7.0</string>
+	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>contacts</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>locationAlwaysAndInUse</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>locationAlways</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>打开麦克风权限</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>addToLibrary</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>gallery</string>
+	<key>StatusBarBackground</key>
+	<string>#FFFFFF</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
-		<integer>2</integer>
+	</array>
+	<key>UILaunchImages</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>8.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape-736h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{414, 736}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>8.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-736h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{414, 736}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>11.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-812h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{375, 812}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>11.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape-812h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{375, 812}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>8.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-667h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{375, 667}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>8.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape-667h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 667}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 480}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-568h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape-568h</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+	</array>
+	<key>UILaunchImages~ipad</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape7</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Portrait7</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>arm64</string>
-	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIReserveStatusbarOffset</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>amap</key>
+	<dict>
+		<key>appkey</key>
+		<string>3b700043afcec930de5a272030cdf707</string>
+	</dict>
+	<key>baidu</key>
+	<dict>
+		<key>appkey</key>
+		<string>mRFUA0lOYyCGXOcFkZ4cP44K</string>
+	</dict>
+	<key>baiduspeech</key>
+	<dict>
+		<key>API_KEY</key>
+		<string>0IBn3m2b2XzyVACYYQlC8itE</string>
+		<key>APP_ID</key>
+		<string>10466026</string>
+		<key>SECRET_KEY</key>
+		<string>x6tLv1aRUnmzQ6i7sun1fHDOxyeMNiPD</string>
+	</dict>
+	<key>dhpush</key>
+	<dict>
+		<key>appid</key>
+		<string>maia</string>
+		<key>url</key>
+		<string>http://124.193.96.86:27102/api.do</string>
+	</dict>
+	<key>getui</key>
+	<dict>
+		<key>appid</key>
+		<string>v0jlZRvZhy7o0cSU7NntY7</string>
+		<key>appkey</key>
+		<string>A7Cek2m4if9RJyuKzmvoz8</string>
+		<key>appsecret</key>
+		<string>1Mmelr9cmv7RpEKbvN6zB6</string>
+	</dict>
+	<key>iFly</key>
+	<dict>
+		<key>appid</key>
+		<string>535a0afe</string>
+	</dict>
+	<key>marketChannel</key>
+	<string>com.dcloud.nativeSearch|H57BCF8D2|12331280401</string>
+	<key>qihoo</key>
+	<dict>
+		<key>channelid</key>
+		<string></string>
+		<key>destkey</key>
+		<string></string>
+		<key>signkey</key>
+		<string></string>
+	</dict>
+	<key>sinaweibo</key>
+	<dict>
+		<key>appSecret</key>
+		<string>b8fa3ec4b7e47a152044d9e8265cf593</string>
+		<key>appkey</key>
+		<string>3662743235</string>
+		<key>redirectURI</key>
+		<string>http://www.dcloud.io/</string>
+	</dict>
+	<key>tencentweibo</key>
+	<dict>
+		<key>appSecret</key>
+		<string>f11b86520d90ae710e6c782b8f8cd8b2</string>
+		<key>appkey</key>
+		<string>801495246</string>
+		<key>redirectURI</key>
+		<string>http://www.dcloud.io/</string>
+	</dict>
+	<key>umeng</key>
+	<dict>
+		<key>appkey</key>
+		<string>5379d57656240b5493130a40</string>
+		<key>channel</key>
+		<string>App Store</string>
+	</dict>
+	<key>weixinoauth</key>
+	<dict>
+		<key>appSecret</key>
+		<string>fdc6251421d3d688a563b4f00dd540e7</string>
+		<key>appid</key>
+		<string>wx0411fa6a39d61297</string>
+	</dict>
 </dict>
 </plist>
